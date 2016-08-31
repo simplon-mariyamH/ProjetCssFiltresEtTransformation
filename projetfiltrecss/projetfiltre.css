@@ -26,93 +26,93 @@ img {
   /*margin-left: 35vw;*/
 }
 
-.greyscale .filtre {
+.greyscale .filtre:hover {
   filter: grayscale(0.7);
   transition: all 0.3s ease-in-out;
 
 }
-.greyscale .filtre:hover {
+.greyscale .filtre {
   transform: scale(1.1);
   filter: none;
 }
 
-.blur .filtre {
+.blur .filtre:hover {
   filter: blur(5px);
   transition: all 0.3s ease-in-out;
 }
-.blur .filtre:hover {
+.blur .filtre {
   transform: scale(1.1);
   filter: none;
 }
 
-.saturate .filtre {
+.saturate .filtre:hover {
   filter: saturate(500%);
   transition: all 0.3s ease-in-out;
 }
-.saturate .filtre:hover {
+.saturate .filtre {
   transform: scale(1.1);
   filter: none;
 }
 
-.sepia .filtre {
+.sepia .filtre:hover {
   filter: sepia(0.7);
   transition: all 0.3s ease-in-out;
 }
-.sepia .filtre:hover {
+.sepia .filtre {
   transform: scale(1.1);
   filter: none;
 }
 
-.hue-rotate .filtre {
+.hue-rotate .filtre:hover {
   filter: hue-rotate(200deg);
   transition: all 0.3s ease-in-out;
 }
-.hue-rotate .filtre:hover {
+.hue-rotate .filtre {
   transform: scale(1.1);
   filter: none;
 }
 
-.invert .filtre {
+.invert .filtre:hover {
   filter: invert(0.7);
   transition: all 0.3s ease-in-out;
 }
-.invert .filtre:hover {
+.invert .filtre {
   transform: scale(1.1);
   filter: none;
 }
 
-.brightness .filtre {
+.brightness .filtre:hover {
   filter: brightness(0.7);
   transition: all 0.3s ease-in-out;
 }
-.brightness .filtre:hover {
+.brightness .filtre {
   transform: scale(1.1);
   filter: none;
 }
 
-.contrast .filtre {
+.contrast .filtre:hover {
   filter: contrast(0.7);
   transition: all 0.3s ease-in-out;
 }
-.contrast .filtre:hover {
+.contrast .filtre {
   transform: scale(1.1);
   filter: none;
 }
 
-.opacity .filtre {
+.opacity .filtre:hover {
   filter: opacity(0.7);
   transition: all 0.3s ease-in-out;
 }
-.opacity .filtre:hover {
+.opacity .filtre {
   transform: scale(1.1);
   filter: none;
 }
 
-.drop-shadow .filtre {
+.drop-shadow .filtre:hover {
   filter: drop-shadow(16px 16px 20px blue);
   transition: all 0.3s ease-in-out;
 }
-.drop-shadow .filtre:hover {
+.drop-shadow .filtre {
   transform: scale(1.1);
   filter: none;
 }
