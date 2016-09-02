@@ -1,0 +1,38 @@
+body {
+  font-family: Helvetica;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+#translation, #echelle, #rotation, #inclinaison, #matrice{
+  background-color: #848484;
+  height: 50px;
+  width : 170px;
+  transform-origin: top left;
+}
+
+#translation:hover {
+  transform : translate(40px);
+}
+
+#echelle:hover {
+  transform : scale(1.5);
+}
+
+#rotation:hover {
+  transform : rotate(20deg);
+}
+
+#inclinaison:hover {
+  transform : skew(30deg, 2deg);
+}
+
+#matrice:hover {
+  transform:  matrix(1, 0.577, 0.577, 2, 1, 10);
+}
