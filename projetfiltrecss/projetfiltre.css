@@ -1,0 +1,267 @@
+html{
+  /*background-color: #F5F5F5;*/
+}
+#intro {
+  background-color: yellow;
+}
+
+#intro h2 {
+  text-align: center;
+  color: blue;
+  font-size: 9vw;
+  font-family: 'Cinzel', serif;
+  position: relative;
+  left: 0;
+  right: 0;
+  -webkit-filter: drop-shadow(15px 15px 50px red);
+  animation-name: deroulant;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-name: deroulant;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes deroulant {
+  0%{
+    -webkit-filter: none;
+    filter: none;
+  }
+  75%{
+
+  }
+  80%{
+    -webkit-filter: brightness(0.7);
+    filter: brightness(0.7);
+  }
+  85%{
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+  }
+  90%{
+    -webkit-filter: hue-rotate(600deg);
+    filter: hue-rotate(600deg);
+  }
+  95%{
+    -webkit-filter: opacity(0.7);
+    filter: opacity(0.7);
+  }
+  100%{
+    -webkit-filter: grayscale(0.7);
+    filter: grayscale(0.7);
+  }
+}
+
+#liste {
+
+}
+
+#liste h3 {
+  position: relative;
+  margin-left: 3vw;
+}
+
+#liste ul {
+  margin-left: 3vw;
+}
+
+img {
+  width : 35vw;
+  height: 18vw;
+  position: absolute;
+  margin-left: 5vw;
+}
+
+p {
+  font-size: 25px;
+  font-family: serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h3 {
+  color : blue;
+}
+
+.css {
+  border-radius: 15px;
+  width: 30vw;
+  height: 18vw;
+
+}
+.filtre {
+  position: relative;
+  /*margin-left: 35vw;*/
+}
+
+.greyscale .filtre:hover {
+  filter: grayscale(0.7);
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: grayscale(0.7);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-filter: grayscale(0.7);
+  -moz-transition: all 0.3s ease-in-out;
+}
+.greyscale .filtre {
+  transform: scale(1.1);
+  filter: none;
+  -webkit-transform: scale(1.1);
+  -webkit-filter: none;
+  -moz-transform: scale(1.1);
+  -moz-filter: none;
+}
+
+.blur .filtre:hover {
+  filter: blur(5px);
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: blur(5px);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-filter: blur(5px);’
+  -moz-transition: all 0.3s ease-in-out;
+}
+.blur .filtre {
+  transform: scale(1.1);
+  filter: none;
+  -webkit-transform: scale(1.1);
+  -webkit-filter: none;
+  -moz-transform: scale(1.1);
+  -moz-filter: none;
+}
+
+.saturate .filtre:hover {
+  filter: saturate(500%);
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: saturate(500%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-filter: saturate(500%);
+  -moz-transition: all 0.3s ease-in-out;
+}
+.saturate .filtre {
+  transform: scale(1.1);
+  filter: none;
+  -webkit-transform: scale(1.1);
+  -webkit-filter: none;
+  -moz-transform: scale(1.1);
+  -moz-filter: none;
+}
+
+.sepia .filtre:hover {
+  filter: sepia(0.7);
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: sepia(0.7);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-filter: sepia(0.7);
+  -moz-transition: all 0.3s ease-in-out;
+}
+.sepia .filtre {
+  transform: scale(1.1);
+  filter: none;
+  -webkit-transform: scale(1.1);
+  -webkit-filter: none;
+  -moz-transform: scale(1.1);
+  -moz-filter: none;
+}
+
+.hue-rotate .filtre:hover {
+  filter: hue-rotate(200deg);
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: hue-rotate(200deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-filter: hue-rotate(200deg);
+  -moz-transition: all 0.3s ease-in-out;
+}
+.hue-rotate .filtre {
+  transform: scale(1.1);
+  filter: none;
+  -webkit-transform: scale(1.1);
+  -webkit-filter: none;
+  -moz-transform: scale(1.1);
+  -moz-filter: none;
+}
+
+.invert .filtre:hover {
+  filter: invert(0.7);
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: invert(0.7);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-filter: invert(0.7);
+  -moz-transition: all 0.3s ease-in-out;
+}
+.invert .filtre {
+  transform: scale(1.1);
+  filter: none;
+  -webkit-transform: scale(1.1);
+  -webkit-filter: none;
+  -moz-transform: scale(1.1);
+  -moz-filter: none;
+}
+
+.brightness .filtre:hover {
+  filter: brightness(0.7);
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: brightness(0.7);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-filter: brightness(0.7);
+  -moz-transition: all 0.3s ease-in-out;
+}
+.brightness .filtre {
+  transform: scale(1.1);
+  filter: none;
+  -webkit-transform: scale(1.1);
+  -webkit-filter: none;
+  -moz-transform: scale(1.1);
+  -moz-filter: none;
+}
+
+.contrast .filtre:hover {
+  filter: contrast(0.7);
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: contrast(0.7);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-filter: contrast(0.7);
+  -moz-transition: all 0.3s ease-in-out;
+}
+.contrast .filtre {
+  transform: scale(1.1);
+  filter: none;
+  -webkit-transform: scale(1.1);
+  -webkit-filter: none;
+  -moz-transform: scale(1.1);
+  -moz-filter: none;
+}
+
+.opacity .filtre:hover {
+  filter: opacity(0.7);
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: opacity(0.7);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-filter: opacity(0.7);
+  -moz-transition: all 0.3s ease-in-out;
+}
+.opacity .filtre {
+  transform: scale(1.1);
+  filter: none;
+  -webkit-transform: scale(1.1);
+  -webkit-filter: none;
+  -moz-transform: scale(1.1);
+  -moz-filter: none;
+}
+
+.drop-shadow .filtre:hover {
+  filter: drop-shadow(16px 16px 20px blue);
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: drop-shadow(16px 16px 20px blue);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-filter: drop-shadow(16px 16px 20px blue);
+  -moz-transition: all 0.3s ease-in-out;
+}
+.drop-shadow .filtre {
+  transform: scale(1.1);
+  filter: none;
+  -webkit-transform: scale(1.1);
+  -webkit-filter: none;
+  -moz-transform: scale(1.1);
+  -moz-filter: none;
+}
