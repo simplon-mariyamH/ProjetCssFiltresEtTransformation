@@ -60,9 +60,10 @@ article {
 .code, #code_drop {
     background-color: #1d1f21;
     width: 408px;
-    border-radius: 20px;
+    border-radius: 5px;
     margin-left: 30px;
     position: relative;
+    color: white;
 }
 
 .code h1, #code_drop h1 {
@@ -91,6 +92,19 @@ article {
 
 #liste ul {
   margin-left: 3vw;
+}
+
+.texte_vert {
+  color: #83DA1F;
+}
+.texte_bleu {
+  color: #3FBFBF;
+}
+.texte_violet {
+  color: #761FDA;
+}
+.texte_rouge {
+  color: #BF3F7F;
 }
 
 img {
