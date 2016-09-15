@@ -265,3 +265,21 @@ h3 {
   -moz-transform: scale(1.1);
   -moz-filter: none;
 }
+
+.combinaison .filtre:hover {
+  filter: brightness(0.5) opacity(0.9) saturate(500%);
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: brightness(0.5) opacity(0.9) saturate(500%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-filter: brightness(0.5) opacity(0.9) saturate(500%);
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.combinaison .filtre {
+  transform: scale(1.1);
+  filter: none;
+  -webkit-transform: scale(1.1);
+  -webkit-filter: none;
+  -moz-transform: scale(1.1);
+  -moz-filter: none;
+}
