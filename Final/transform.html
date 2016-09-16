@@ -13,7 +13,7 @@
             <a href="index.html">Retour à l'index, temporaire</a><br />
             <a href="filtres.html">Aller vers Filtres, temporaire</a>
         </header>
-        
+
         <section id="introduction_transform">
             <header>
                 <h1>Les transformations sous la propriété "transform"</h1>
@@ -37,7 +37,9 @@
                 </ul>
 
                 <p>Nous verrons les différentes transformations dans cette section.<br />
-                Il est possible d'utiliser plusieurs transformation à la suite mais ATTENTION à l'ordre dans lequel on les met !!!</p>
+                Il est possible d'utiliser plusieurs transformation à la suite mais ATTENTION à l'ordre dans lequel on les met !!!
+                </br>Pour utiliser plusieurs transformations à la suite: <code>transform : transform1() transform2();</code>
+                </p>
             </div>
 
             <div>
@@ -91,7 +93,8 @@
             </div>
 
 
-            <div id="demonstration_scale">
+            <div class="demonstration">
+                <code id="democode">transform:scale(1.5);</code>
                 <div class="demo" id="demo_scale"></div>
             </div>
         </section>
@@ -103,11 +106,11 @@
 
             <div>
                 <p>Les fonctions CSS skew(), skewX() et skewY() permettent d'obliquer un élément. Cela aura pour conséquence une distorsion.</p>
-                <p>La fonction skew() se présente de cette manière :<code>transform : skew(x,y), skewX(x) ou skewY(y);</code></p>
+                <p>La fonction skew() se présente de cette manière :<code> transform : skew(x,y), skewX(x) ou skewY(y);</code></p>
 
                 <ul>
-                    <li>x et y représentent l'angle en degrés de la distorsion</li>
-                    <li>ils sont exprimés en degré</li>
+                    <li>x et y représentent l'angle de la distorsion</li>
+                    <li>Ils sont exprimés en degrés</li>
                 </ul>
 
                 <ul>
@@ -115,7 +118,7 @@
                     <ul>
                         <li>x représente l'angle de distorsion horizontale.</li>
                         <li>y représente l'angle de distorsion verticale.</li>
-                        <li>Si une seule valeur est renseignée, cela sera égal à skewX(x).</li>
+                        <li>Si une seule valeur est renseignée, cela reviendra à faire skewX(x).</li>
                     </ul>
                     <li>Si <code>transform : skewX(x)</code> :</li>
                     <ul>
@@ -127,7 +130,7 @@
                     </ul>
                 </ul>
 
-                <p>ATTENTION : Skew() est en voie de disparaître. Seul skewX() et skewY() seront utilisables.</p>
+                <p>ATTENTION : Skew() est en voie de disparition. Seuls skewX() et skewY() seront utilisables.</p>
             </div>
 
             <div>
@@ -137,7 +140,8 @@
             </div>
 
 
-            <div id="demonstration_skew">
+            <div class="demonstration">
+                <code>transform:skew(15deg, 15deg);</code>
                 <div class="demo" id="demo_skew"></div>
             </div>
         </section>
@@ -165,10 +169,12 @@
             <div>
                 <img src="images/rotate1.png" alt="schéma de rotate" />
                 <img src="images/rotate2.png" alt="schéma de rotate" />
+                <!--Modifier les coordonnées de transform-origin -->
             </div>
 
 
-            <div id="demonstration_rotate">
+            <div class="demonstration">
+                <code>transform:rotate(180deg);</code>
                 <div class="demo" id="demo_rotate"></div>
             </div>
         </section>
@@ -206,10 +212,12 @@
                 <img src="images/translate4.png" alt="schéma de translation" />
                 <img src="images/translate5.png" alt="schéma de translation" />
                 <img src="images/translate6.png" alt="schéma de translation" />
+                <!-- Modifier le texte sur les schémas, rajouter le transform-origin(0,0)-->
             </div>
 
 
-            <div id="demonstration_translate">
+            <div class="demonstration">
+                <code>transform:translate(20px, 20px);</code>
                 <div class="demo" id="demo_translate"></div>
             </div>
         </section>
@@ -242,6 +250,7 @@
                             <li>Ex :<code>transform: skew(20deg, 20deg)</code> est égal à <code>transform: matrix(1, 0.36397, 0.36397, 1, 0, 0)</code></li>
                         </ul>
                     </ul>
+                  <br>
                     <li>Si vous voulez appliquer une/des transformations EN UTILISANT rotate()</li>
                     <ul>
                         <li>Toutes les valeurs seront modifiées, quel que soit la/les fonction(s) utilisé(es).</li>
@@ -252,6 +261,7 @@
                             (cf explications des matrices pour plus de renseignements)</li>
                         </ul>
                     </ul>
+                  <br>
                     <li>Site pour transposer ses transforms en matrix()</li>
                     <p>Sur ce site, vous pouvez rentrer vos transformations à la suite et elles se transposent en matrix().</p>
                     <p>Lien : <a href="http://meyerweb.com/eric/tools/matrix/" alt="lien vers matrix">The Matrix revolution</a></p>
@@ -263,7 +273,8 @@
             </div>
 
 
-            <div id="demonstration_matrix">
+            <div class="demonstration" >
+                <code>transform:matrix(1.39162, 0.562252, 0.300767, 1.70574, 40, 0);</code>
                 <div class="demo" id="demo_matrix"></div>
             </div>
         </section>
@@ -277,13 +288,13 @@
             <div>
                 <p>La fonction CSS transform-origin permet de modifier l'origine du repère.</p>
                 <p>Elle est associée à une transformation (transform).</p>
-                <p>La fonction transform-orogin se présente de cette manière :<code>transform-origin: x y;</code></p>
+                <p>La fonction transform-orogin se présente de cette manière :<code> transform-origin: x y;</code></p>
 
                 <ul>
-                    <li> x représente le déplacement horizontal du point d'origine.</li>
-                    <li>y représente le déplacement vertical du point d'origine.</li>
-                    <li>x et y sont exprimés en %, en unité de longueur(cm, px, ...) ou en mot clé (left, right, top, bottom ou center).</li>
-                    <li>La valeur de y peut être omise. Dans ce cas c'est la valeur par défaut qui est utilisée (center).</li>
+                    <li> x représente le déplacement horizontal du point d'origine</li>
+                    <li>y représente le déplacement vertical du point d'origine</li>
+                    <li>x et y sont exprimés en %, en unité de longueur (cm, px, ...) ou en mot clé (left, right, top, bottom ou center)</li>
+                    <li>La valeur de y peut être omise. Dans ce cas c'est la valeur par défaut qui est utilisée (center)</li>
                 </ul>
 
                 <p>L'origine par défaut est le centre de l'élement (50%,50%).</p>
@@ -303,7 +314,7 @@
                     <div class="box"></div>
                     <button id="button1">click me</button>
                 </div>
-                
+
                 <div class="demo_origin">
                     <code id="texte2">
                         transform-origin: top left;<br />

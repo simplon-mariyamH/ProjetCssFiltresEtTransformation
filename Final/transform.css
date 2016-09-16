@@ -34,13 +34,16 @@ span {
     font-weight: bold;
 }
 
-.demo {
+.demonstration {
+  text-align: center;
   flex-direction: column;
+
 }
 
 #demonstration_origin {
   display: flex;
-  justify-content: space-around;;
+  justify-content: space-around;
+
 }
 
 #texte1 {
