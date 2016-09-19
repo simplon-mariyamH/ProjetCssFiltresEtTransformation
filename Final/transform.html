@@ -44,6 +44,7 @@
 
                 <p>Nous verrons les différentes transformations dans cette section.<br />
                 Il est possible d'utiliser plusieurs transformation à la suite mais ATTENTION à l'ordre dans lequel on les met !!!</p>
+            </br>Pour utiliser plusieurs transformations à la suite: <code>transform : transform1() transform2();</code>
             </div>
 
             <div>
@@ -97,7 +98,8 @@
             </div>
 
 
-            <div id="demonstration_scale">
+             <div class="demonstration">
+                <code id="democode">transform:scale(1.5);</code>
                 <div class="demo" id="demo_scale"></div>
             </div>
         </section>
@@ -113,7 +115,7 @@
 
                 <ul>
                     <li>x et y représentent l'angle en degrés de la distorsion</li>
-                    <li>ils sont exprimés en degré</li>
+                    <li>Ils sont exprimés en degrés</li>
                 </ul>
 
                 <ul>
@@ -143,7 +145,8 @@
             </div>
 
 
-            <div id="demonstration_skew">
+            <div class="demonstration">
+                <code>transform:skew(15deg, 15deg);</code>
                 <div class="demo" id="demo_skew"></div>
             </div>
         </section>
@@ -174,7 +177,8 @@
             </div>
 
 
-            <div id="demonstration_rotate">
+            <div class="demonstration">
+                <code>transform:rotate(180deg);</code>
                 <div class="demo" id="demo_rotate"></div>
             </div>
         </section>
@@ -215,7 +219,8 @@
             </div>
 
 
-            <div id="demonstration_translate">
+            <div class="demonstration">
+                <code>transform:translate(20px, 20px);</code>
                 <div class="demo" id="demo_translate"></div>
             </div>
         </section>
@@ -231,7 +236,7 @@
                 <p>La fonction matrix() se présente de cette manière :<code>transform : matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) </code></p>
                 <p>rotate() n'est pas présente dans les paramètres de matrix() mais vous pouvez quand même la rajouter aux autres transformations (cf. ci dessous). <br />
                 ATTENTION ! On ne précise pas d'unité pour les valeurs !</p>
-
+                  <br>
                 <ol>
                     <li>Si vous voulez appliquer une/des transformations SANS utiliser rotate()</li>
                     <ul>
@@ -248,6 +253,7 @@
                             <li>Ex :<code>transform: skew(20deg, 20deg)</code> est égal à <code>transform: matrix(1, 0.36397, 0.36397, 1, 0, 0)</code></li>
                         </ul>
                     </ul>
+                    <br>
                     <li>Si vous voulez appliquer une/des transformations EN UTILISANT rotate()</li>
                     <ul>
                         <li>Toutes les valeurs seront modifiées, quel que soit la/les fonction(s) utilisé(es).</li>
@@ -258,6 +264,7 @@
                             (cf explications des matrices pour plus de renseignements)</li>
                         </ul>
                     </ul>
+                    <br>
                     <li>Site pour transposer ses transforms en matrix()</li>
                     <p>Sur ce site, vous pouvez rentrer vos transformations à la suite et elles se transposent en matrix().</p>
                     <p>Lien : <a href="http://meyerweb.com/eric/tools/matrix/" alt="lien vers matrix">The Matrix revolution</a></p>
@@ -269,7 +276,8 @@
             </div>
 
 
-            <div id="demonstration_matrix">
+            <div class="demonstration" >
+                <code>transform: matrix(1.39162, 0.562252, 0.300767, 1.70574, 40, 0);</code>
                 <div class="demo" id="demo_matrix"></div>
             </div>
         </section>
