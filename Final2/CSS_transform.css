@@ -73,8 +73,10 @@ p, li, ul, h1 {
 span {
   font-weight: bold; }
 
-.demo {
-  flex-direction: column; }
+.demonstration {
+  text-align: center;
+  flex-direction: column;
+}
 
 #demonstration_origin {
   display: flex;
