@@ -44,7 +44,7 @@
 
                 <p>Nous verrons les différentes transformations dans cette section.<br />
                 Il est possible d'utiliser plusieurs transformation à la suite mais ATTENTION à l'ordre dans lequel on les met !!!</p>
-            </br>Pour utiliser plusieurs transformations à la suite: <code>transform : transform1() transform2();</code>
+            </br>Pour utiliser plusieurs transformations à la suite:<code> transform : transform1() transform2();</code>
             </div>
 
             <div>
@@ -61,7 +61,7 @@
 
             <div>
                 <p>Les fonctions CSS scale(), scaleX() et scaleY() permettent d'agir sur l'echelle    d'un élément. Cela aura pour conséquence un agrandissement ou une réduction de l'élement.</p>
-                <p>La fonction scale se présente de cette manière :<code>transform : scale(x,y),scaleX(x) ou scaleY(y)</code></p>
+                <p>La fonction scale se présente de cette manière :<code> transform : scale(x,y),scaleX(x) ou scaleY(y)</code></p>
 
                 <ul>
                     <li>x ou y supérieurs à 1, action d'agrandissement</li>
@@ -135,7 +135,7 @@
                     </ul>
                 </ul>
 
-                <p>ATTENTION : Skew() est en voie de disparition. Seul skewX() et skewY() seront utilisables.</p>
+                <p>ATTENTION : Skew() est en voie de disparition. Seuls skewX() et skewY() seront utilisables.</p>
             </div>
 
             <div>
@@ -159,7 +159,7 @@
 
             <div>
                 <p>La fonction CSS rotate() permet d'effectuer une rotation. Cette rotation déplace l'élément autour d'un point fixe (transform-origin) sans le déformer.</p>
-                <p>La fonction rotate se présente de cette manière : <code>transform : rotate(x);</code></p>
+                <p>La fonction rotate se présente de cette manière :<code> transform : rotate(x);</code></p>
 
                 <ul>
                     <li>x représente l'angle de la rotation</li>
@@ -190,7 +190,7 @@
 
             <div>
                 <p>Les fonctions CSS translate(), translateX() et translateY() permettent de décaler un élément horizontalement ou verticalement par rapport à sa position d'origine.</p>
-                <p>La fonction translate se présente de cette manière<code>transform : translate(x,y),translateX(x) ou translateY(y)</code></p>
+                <p>La fonction translate se présente de cette manière:<code> transform : translate(x,y),translateX(x) ou translateY(y)</code></p>
 
                 <ul>
                     <li>Si <code>transform : translate(x,y)</code> :</li>
@@ -259,8 +259,8 @@
                         <li>Toutes les valeurs seront modifiées, quel que soit la/les fonction(s) utilisé(es).</li>
                         <li>les valeurs de translateX() et translateY() resteront intactes</li>
                         <ul>
-                            <li>Ex :<code>transform: scale(2)</code> est égal à <code>transform: matrix(2, 0, 0, 2, 0, 0)</code><br />
-                            Par contre <code>transform: scale(2) rotate(45deg)</code>donnera : <code>transform: matrix(1.41421, 1.41421, -1.41421, 1.41421, 0, 0)</code><br />
+                            <li>Ex :<code> transform: scale(2)</code> est égal à<code> transform: matrix(2, 0, 0, 2, 0, 0)</code><br />
+                            Par contre <code>transform: scale(2) rotate(45deg)</code>donnera :<code> transform: matrix(1.41421, 1.41421, -1.41421, 1.41421, 0, 0)</code><br />
                             (cf explications des matrices pour plus de renseignements)</li>
                         </ul>
                     </ul>
@@ -291,7 +291,7 @@
             <div>
                 <p>La fonction CSS transform-origin permet de modifier l'origine du repère.</p>
                 <p>Elle est associée à une transformation (transform).</p>
-                <p>La fonction transform-orogin se présente de cette manière :<code>transform-origin: x y;</code></p>
+                <p>La fonction transform-orogin se présente de cette manière :<code> transform-origin: x y;</code></p>
 
                 <ul>
                     <li> x représente le déplacement horizontal du point d'origine.</li>
@@ -302,7 +302,7 @@
 
                 <p>L'origine par défaut est le centre de l'élement (50%,50%).</p>
                 <p>Lorsque l'on applique <code>transform-origin</code>, le décalage du point d'origine s'effectuera à partir du bord en haut à gauche de l'élément.</p>
-                <p>Exemple : <code>transform-origin: 10px;</code> déplacera le point d'origine de 10 px vers la droite <span>à partir du bord gauche</span> par contre, il n'y a pas de valeur de y de spécifiée donc c'est la valeur par défaut qui est appliquée.</p>
+                <p>Exemple :<code> transform-origin: 10px;</code> déplacera le point d'origine de 10 px vers la droite <span>à partir du bord gauche</span> par contre, il n'y a pas de valeur de y de spécifiée donc c'est la valeur par défaut qui est appliquée.</p>
             </div>
 
             <div>
