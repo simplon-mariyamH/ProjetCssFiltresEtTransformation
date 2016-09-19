@@ -2,21 +2,27 @@
 <html lang="fr">
       <head>
           <meta charset="utf-8">
-          <link rel="stylesheet" href="transform.css">
+          <link rel="stylesheet" href="CSS_transform.css">
+          <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
           <title>Filtres et Transformations</title>
     </head>
 
     <body>
 
+      <div id="header">
+        <img src="images/transformhead.png">
+        <img id="animtitle" src="images/transformtitle.png">
+
         <!-- creation du header et du menu de navigation -->
-        <header>
-            <a href="index.html">Retour à l'index, temporaire</a><br />
-            <a href="filtres.html">Aller vers Filtres, temporaire</a>
-        </header>
+        <nav>
+            <a href="index.html"><div class="buttonnav"  >Accueil</div></a>
+            <a href="HTML_filtres.html"><div class="buttonnav"  >Filtres</div></a>
+        </nav>
 
         <section id="introduction_transform">
             <header>
-                <h1>Les transformations sous la propriété "transform"</h1>
+                <h1>Les transformations sous la propriété "transform" (+)</h1>
             </header>
 
             <div>
@@ -37,9 +43,8 @@
                 </ul>
 
                 <p>Nous verrons les différentes transformations dans cette section.<br />
-                Il est possible d'utiliser plusieurs transformation à la suite mais ATTENTION à l'ordre dans lequel on les met !!!
-                </br>Pour utiliser plusieurs transformations à la suite: <code>transform : transform1() transform2();</code>
-                </p>
+                Il est possible d'utiliser plusieurs transformation à la suite mais ATTENTION à l'ordre dans lequel on les met !!!</p>
+            </br>Pour utiliser plusieurs transformations à la suite:<code> transform : transform1() transform2();</code>
             </div>
 
             <div>
@@ -51,12 +56,12 @@
         <section id="scale">
           <a name="1"></a>
             <header>
-                <h1>Transform : scale</h1>
+                <h1>Transform : scale (+)</h1>
             </header>
 
             <div>
                 <p>Les fonctions CSS scale(), scaleX() et scaleY() permettent d'agir sur l'echelle    d'un élément. Cela aura pour conséquence un agrandissement ou une réduction de l'élement.</p>
-                <p>La fonction scale se présente de cette manière :<code>transform : scale(x,y),scaleX(x) ou scaleY(y)</code></p>
+                <p>La fonction scale se présente de cette manière :<code> transform : scale(x,y),scaleX(x) ou scaleY(y)</code></p>
 
                 <ul>
                     <li>x ou y supérieurs à 1, action d'agrandissement</li>
@@ -93,7 +98,7 @@
             </div>
 
 
-            <div class="demonstration">
+             <div class="demonstration">
                 <code id="democode">transform:scale(1.5);</code>
                 <div class="demo" id="demo_scale"></div>
             </div>
@@ -101,7 +106,7 @@
 
         <section id="skew">
             <header>
-                <h1>Transform : skew</h1>
+                <h1>Transform : skew (+)</h1>
             </header>
 
             <div>
@@ -109,7 +114,7 @@
                 <p>La fonction skew() se présente de cette manière :<code> transform : skew(x,y), skewX(x) ou skewY(y);</code></p>
 
                 <ul>
-                    <li>x et y représentent l'angle de la distorsion</li>
+                    <li>x et y représentent l'angle en degrés de la distorsion</li>
                     <li>Ils sont exprimés en degrés</li>
                 </ul>
 
@@ -149,12 +154,12 @@
         <section id="rotate">
           <a name="2"></a>
             <header>
-                <h1>Transform : rotate</h1>
+                <h1>Transform : rotate (+)</h1>
             </header>
 
             <div>
                 <p>La fonction CSS rotate() permet d'effectuer une rotation. Cette rotation déplace l'élément autour d'un point fixe (transform-origin) sans le déformer.</p>
-                <p>La fonction rotate se présente de cette manière : <code>transform : rotate(x);</code></p>
+                <p>La fonction rotate se présente de cette manière :<code> transform : rotate(x);</code></p>
 
                 <ul>
                     <li>x représente l'angle de la rotation</li>
@@ -169,7 +174,6 @@
             <div>
                 <img src="images/rotate1.png" alt="schéma de rotate" />
                 <img src="images/rotate2.png" alt="schéma de rotate" />
-                <!--Modifier les coordonnées de transform-origin -->
             </div>
 
 
@@ -181,12 +185,12 @@
 
         <section id="translate">
             <header>
-                <h1>Transform : translate</h1>
+                <h1>Transform : translate (+)</h1>
             </header>
 
             <div>
                 <p>Les fonctions CSS translate(), translateX() et translateY() permettent de décaler un élément horizontalement ou verticalement par rapport à sa position d'origine.</p>
-                <p>La fonction translate se présente de cette manière<code>transform : translate(x,y),translateX(x) ou translateY(y)</code></p>
+                <p>La fonction translate se présente de cette manière:<code> transform : translate(x,y),translateX(x) ou translateY(y)</code></p>
 
                 <ul>
                     <li>Si <code>transform : translate(x,y)</code> :</li>
@@ -212,7 +216,6 @@
                 <img src="images/translate4.png" alt="schéma de translation" />
                 <img src="images/translate5.png" alt="schéma de translation" />
                 <img src="images/translate6.png" alt="schéma de translation" />
-                <!-- Modifier le texte sur les schémas, rajouter le transform-origin(0,0)-->
             </div>
 
 
@@ -225,7 +228,7 @@
         <section id="matrix">
           <a name="3"></a>
             <header>
-                <h1>Transform : matrix</h1>
+                <h1>Transform : matrix (+)</h1>
             </header>
 
             <div>
@@ -233,7 +236,7 @@
                 <p>La fonction matrix() se présente de cette manière :<code>transform : matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) </code></p>
                 <p>rotate() n'est pas présente dans les paramètres de matrix() mais vous pouvez quand même la rajouter aux autres transformations (cf. ci dessous). <br />
                 ATTENTION ! On ne précise pas d'unité pour les valeurs !</p>
-
+                  <br>
                 <ol>
                     <li>Si vous voulez appliquer une/des transformations SANS utiliser rotate()</li>
                     <ul>
@@ -250,18 +253,18 @@
                             <li>Ex :<code>transform: skew(20deg, 20deg)</code> est égal à <code>transform: matrix(1, 0.36397, 0.36397, 1, 0, 0)</code></li>
                         </ul>
                     </ul>
-                  <br>
+                    <br>
                     <li>Si vous voulez appliquer une/des transformations EN UTILISANT rotate()</li>
                     <ul>
                         <li>Toutes les valeurs seront modifiées, quel que soit la/les fonction(s) utilisé(es).</li>
                         <li>les valeurs de translateX() et translateY() resteront intactes</li>
                         <ul>
-                            <li>Ex :<code>transform: scale(2)</code> est égal à <code>transform: matrix(2, 0, 0, 2, 0, 0)</code><br />
-                            Par contre <code>transform: scale(2) rotate(45deg)</code>donnera : <code>transform: matrix(1.41421, 1.41421, -1.41421, 1.41421, 0, 0)</code><br />
+                            <li>Ex :<code> transform: scale(2)</code> est égal à<code> transform: matrix(2, 0, 0, 2, 0, 0)</code><br />
+                            Par contre <code>transform: scale(2) rotate(45deg)</code>donnera :<code> transform: matrix(1.41421, 1.41421, -1.41421, 1.41421, 0, 0)</code><br />
                             (cf explications des matrices pour plus de renseignements)</li>
                         </ul>
                     </ul>
-                  <br>
+                    <br>
                     <li>Site pour transposer ses transforms en matrix()</li>
                     <p>Sur ce site, vous pouvez rentrer vos transformations à la suite et elles se transposent en matrix().</p>
                     <p>Lien : <a href="http://meyerweb.com/eric/tools/matrix/" alt="lien vers matrix">The Matrix revolution</a></p>
@@ -274,7 +277,7 @@
 
 
             <div class="demonstration" >
-                <code>transform:matrix(1.39162, 0.562252, 0.300767, 1.70574, 40, 0);</code>
+                <code>transform: matrix(1.39162, 0.562252, 0.300767, 1.70574, 40, 0);</code>
                 <div class="demo" id="demo_matrix"></div>
             </div>
         </section>
@@ -282,7 +285,7 @@
         <section id="transform_origin">
           <a name="4"></a>
             <header>
-                <h1>Transform-origin</h1>
+                <h1>Transform-origin (+)</h1>
             </header>
 
             <div>
@@ -291,15 +294,15 @@
                 <p>La fonction transform-orogin se présente de cette manière :<code> transform-origin: x y;</code></p>
 
                 <ul>
-                    <li> x représente le déplacement horizontal du point d'origine</li>
-                    <li>y représente le déplacement vertical du point d'origine</li>
-                    <li>x et y sont exprimés en %, en unité de longueur (cm, px, ...) ou en mot clé (left, right, top, bottom ou center)</li>
-                    <li>La valeur de y peut être omise. Dans ce cas c'est la valeur par défaut qui est utilisée (center)</li>
+                    <li> x représente le déplacement horizontal du point d'origine.</li>
+                    <li>y représente le déplacement vertical du point d'origine.</li>
+                    <li>x et y sont exprimés en %, en unité de longueur(cm, px, ...) ou en mot clé (left, right, top, bottom ou center).</li>
+                    <li>La valeur de y peut être omise. Dans ce cas c'est la valeur par défaut qui est utilisée (center).</li>
                 </ul>
 
                 <p>L'origine par défaut est le centre de l'élement (50%,50%).</p>
                 <p>Lorsque l'on applique <code>transform-origin</code>, le décalage du point d'origine s'effectuera à partir du bord en haut à gauche de l'élément.</p>
-                <p>Exemple : <code>transform-origin: 10px;</code> déplacera le point d'origine de 10 px vers la droite <span>à partir du bord gauche</span> par contre, il n'y a pas de valeur de y de spécifiée donc c'est la valeur par défaut qui est appliquée.</p>
+                <p>Exemple :<code> transform-origin: 10px;</code> déplacera le point d'origine de 10 px vers la droite <span>à partir du bord gauche</span> par contre, il n'y a pas de valeur de y de spécifiée donc c'est la valeur par défaut qui est appliquée.</p>
             </div>
 
             <div>
@@ -317,9 +320,10 @@
 
                 <div class="demo_origin">
                     <code id="texte2">
-                        transform-origin: top left;<br />
+                        transform-origin: top left;</code>
+                        <code id="texte2">
                         transform: rotate(360deg);
-                    </code>
+                        </code>
                     <div class="box2"></div>
                     <button id="button2">click me</button>
                 </div>
